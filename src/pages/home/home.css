@@ -6,3 +6,11 @@
   .home-page .home-page-left {
     flex: 3;
   }
+  .home-page .home-page-left .posts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+  }
+  .home-page .home-page-right {
+    flex: 2;
+  }
