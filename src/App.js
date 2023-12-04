@@ -1,4 +1,5 @@
 import Home from "./pages/home/Home";
+import Header from './components/header/Header'
 
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
 
       <Home />
+      <Header />
       
     </div>
   );
