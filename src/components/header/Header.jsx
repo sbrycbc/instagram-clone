@@ -8,7 +8,7 @@ import { Avatar } from '@mui/material';
 import AvatarFoto from '../../assets/images/sbry.jpg'
 import "./header.css";
 
-const Header = () => {
+const Header = ( { handleOpen}) => {
   return (
     <div className='header-wrapper'>
         <div className="container"> 
@@ -26,7 +26,9 @@ const Header = () => {
                    <ModeCommentIcon className='icon'/>
                 </a>
                 <a href="/">
-                   <AddBoxIcon className='icon'/>
+                   <AddBoxIcon className='icon'
+                    style={{ cursor: "pointer" }}
+                    onClick= {handleOpen}/>
                 </a>
                 <a href="/">
                 <Avatar alt="Cindy Baker"
