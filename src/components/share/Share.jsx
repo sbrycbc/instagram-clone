@@ -10,6 +10,7 @@ import VideoLibraryOutlinedIcon from "@mui/icons-material/VideoLibraryOutlined";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import ShortTextIcon from "@mui/icons-material/ShortText";
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
+import PausePhoto from '../../assets/images/pause.jpg';
 import "./share.css";
 
 
@@ -59,7 +60,7 @@ const Share = ({ open, handleClose }) => {
                 </button>
               </div>
               <div className="share-img-wrapper">
-                <img className="share-img" alt="" src="/images/post/1.png" />
+                <img className="share-img" alt="" src={PausePhoto} />
                 <CancelOutlinedIcon className="cancel-icon" color="error" />
               </div>
             </form>

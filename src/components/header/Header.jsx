@@ -4,20 +4,22 @@ import FindReplaceIcon from '@mui/icons-material/FindReplace';
 import HomeIcon from '@mui/icons-material/Home';
 import ModeCommentIcon from '@mui/icons-material/ModeComment';
 import AddBoxIcon from '@mui/icons-material/AddBox';
-import { Avatar } from '@mui/material';
+import { Avatar, Box } from '@mui/material';
 import AvatarFoto from '../../assets/images/sbry.jpg'
 import "./header.css";
 
-const Header = ( { handleOpen}) => {
+const Header = ({handleOpen}) => {
   return (
     <div className='header-wrapper'>
         <div className="container"> 
         <div className="header">
             <Logo />
+            <Box sx={{ position: "relative" }}>
             <div className="search">
               <FindReplaceIcon className='search-icon'/>
               <input type="text" placeholder='Search' />
               </div>
+              </Box>
               <div className="header-links">
                 <a href="/">
                    <HomeIcon className='icon'/>
@@ -25,11 +27,12 @@ const Header = ( { handleOpen}) => {
                 <a href="/">
                    <ModeCommentIcon className='icon'/>
                 </a>
-                <a href="/">
-                   <AddBoxIcon className='icon'
+                
+                   <AddBoxIcon 
+                    className='icon'
                     style={{ cursor: "pointer" }}
-                    onClick= {handleOpen}/>
-                </a>
+                    onClick={handleOpen}/>
+              
                 <a href="/">
                 <Avatar alt="Cindy Baker"
                 src={AvatarFoto}
