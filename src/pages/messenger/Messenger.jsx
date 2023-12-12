@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@mui/material";
 import Conversation from "../../components/conversation/Conversation";
 import Message from "../../components/message/Message";
+import ChatOnline from "../../components/chatOnline/ChatOnline";
 import "./messenger.css";
 
 const Messenger = () => {
@@ -44,6 +45,7 @@ const Messenger = () => {
       <div className="chat-online">
         <div className="chat-online-wrapper">
           <h4>Online Users</h4>
+          <ChatOnline />
         </div>
       </div>
     </div>
