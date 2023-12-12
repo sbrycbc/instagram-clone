@@ -8,9 +8,10 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 
 
 
-const Post = () => {
+const Post = ({top, bottom}) => {
   return (
     <div className='post-wrapper'>
+      {top && (
       <div className="post-header">
         <div className="post-header-left">
           <a href="/">
@@ -26,9 +27,11 @@ const Post = () => {
           </button>
         </div>
       </div>
+      )}
       <div className="post-image">
         <img src={PausePhoto} alt="Post img"/>
       </div>
+      {bottom  && (
       <div className="post-bottom">
         <div className="post-like">
         <button>
@@ -42,11 +45,9 @@ const Post = () => {
           </a>
           <span className=" post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores rem aut eius repellat dolorum ipsa facere deserunt debitis ex incidunt.</span>
        </div>      
-        <div className="post-time"> 1 dk önce</div>
-
-
+        <div className="post-time"> 1 dk ago</div>
       </div>
-
+)}
     </div>
   )
 }
