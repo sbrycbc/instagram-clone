@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
+import Conversation from "../../components/conversation/Conversation";
 import "./messenger.css";
 
 const Messenger = () => {
@@ -12,6 +13,9 @@ const Messenger = () => {
             className="chat-menu-input"
             placeholder="Search for Friends"
           />
+           <div>
+            <Conversation />
+          </div>
         </div>
       </div>
       <form className="chat-box">
