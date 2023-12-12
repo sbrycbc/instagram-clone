@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@mui/material";
 import Conversation from "../../components/conversation/Conversation";
+import Message from "../../components/message/Message";
 import "./messenger.css";
 
 const Messenger = () => {
@@ -21,6 +22,9 @@ const Messenger = () => {
       <form className="chat-box">
         <div className="chat-box-wrapper">
           <div className="chat-box-top">
+          <div>
+              <Message />
+            </div>
           </div>
           <div className="chat-box-bottom">
               <textarea

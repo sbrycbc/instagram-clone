@@ -48,7 +48,7 @@
   }
   
   .chat-box-top::-webkit-scrollbar-thumb {
-    background: rgb(rgb(0, 216, 231), green, blue);
+    background: rgb(rgb(0, 216, 231), rgb(255, 0, 76), blue);
     background: #fff;
   }
   
