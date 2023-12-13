@@ -2,7 +2,8 @@ import { useState } from "react";
 //import Home from "./pages/home/Home";
 import Header from './components/header/Header';
 import Share from "./components/share/Share";
-import Register from "./pages/register/Register";
+import Login from "./pages/login/Login";
+//import Register from "./pages/register/Register";
 //import Profile from "./pages/profile/Profile";
 //import Messenger from "./pages/messenger/Messenger";
 
@@ -20,8 +21,8 @@ function App() {
      {/*  <Home /> */}
      {/*   < Profile /> */}
      {/*  < Messenger /> */}
-    <Register />
-
+     {/* <Register /> */} 
+   <Login />
       
     </div>
   );

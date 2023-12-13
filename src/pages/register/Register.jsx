@@ -30,7 +30,6 @@ const Register = () => {
           <TextField
             required
             type="email"
-            id="outlined-basic"
             label="Email"
             variant="outlined"
           />
@@ -39,7 +38,6 @@ const Register = () => {
           <TextField
             required
             type="password"
-            id="outlined-basic"
             label="Password"
             variant="outlined"
           />
@@ -68,7 +66,7 @@ const Register = () => {
             variant="outlined"
           />
         </div>
-        <a className="back-login" href="/">
+        <a className="auth-link" href="/">
             Back to Login
         </a>
         <Button type="submit" variant="contained" color="success">
