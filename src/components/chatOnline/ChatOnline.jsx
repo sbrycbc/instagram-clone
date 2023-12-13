@@ -11,7 +11,7 @@ const ChatOnline = () => {
         <Avatar src={AvatarVase} />
         <span className="chat-online-badge"></span>
       </div>
-      <div className="chat-online-name">sbrycbc</div>
+      <div className="chat-online-name">lauffrei</div>
     </div>
   </div>
   )
