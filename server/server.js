@@ -4,6 +4,8 @@ const morgan = require("morgan");
 const connectToDatabase = require('./src/config/db.js');
 const authRoutes = require('./src/routes/auth.js');
 const userRoutes = require('./src/routes/users.js');
+const postRoutes = require('./src/routes/posts.js');
+
 
 
 dotenv.config();
@@ -25,6 +27,8 @@ app.use(morgan("common"));
 
 app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
+app.use("/posts", postRoutes);
+
 
 
 
