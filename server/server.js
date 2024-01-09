@@ -5,6 +5,7 @@ const connectToDatabase = require('./src/config/db.js');
 const authRoutes = require('./src/routes/auth.js');
 const userRoutes = require('./src/routes/users.js');
 const postRoutes = require('./src/routes/posts.js');
+const convRoutes = require('./src/routes/conversation.js');
 
 
 
@@ -28,6 +29,8 @@ app.use(morgan("common"));
 app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
+app.use("/conversations", convRoutes);
+
 
 
 
